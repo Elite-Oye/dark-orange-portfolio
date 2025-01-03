@@ -1,0 +1,38 @@
+:root{
+  --purple:#2F192E;
+  --purple-light:#30192d;
+  --dark-blue:#012677;
+  --blue:#5c65c0;
+  --skyblue :#00b4fc;
+  --light-blue:#005bc5;
+  --dark-pink:#f64c57;
+  --dark-magenta:#e21b5a;
+  --light-green:#61e2c2;
+  --light-purple:#d9abff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+}
+html {
+  scroll-behavior: smooth;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */

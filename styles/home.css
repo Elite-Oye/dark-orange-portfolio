@@ -1,0 +1,378 @@
+/* 
+.home-page{
+  background: linear-gradient(270deg, #151515, #e46401, #08087e);
+  background-size: 400% 400%;
+  animation: gradientMove 8s ease infinite;
+  height: 100vh;
+  width: 100%;
+  color: white;
+}
+/* 
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */ 
+ .home-page{
+  display: flex;
+  background-color: black;
+  position: relative;
+  font-family: "Helvetica Neue";
+  padding-top: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  color: white;
+ }
+ 
+ .home-page .img-div{
+  height: 100%;
+  width: 50%;
+ }
+.home-page .img-div img{ 
+ position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintains aspect ratio and ensures the image fits */
+  object-position: center;
+  opacity: 0.80;
+}
+
+.home-page img:hover{
+  transform: scale(1.1); /* Slightly enlarge the link */
+  transition: transform 0.60s ease-in-out; /* Smooth transition */
+}
+.home-page h1{
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  position: absolute;
+  font-size: 54px;
+  width: 45%;
+  top: 100px;
+ left: 54%;
+  line-height: 70px;
+  transition: transform 0.50s ease-in-out; /* Smooth transition */
+ }
+ .home-page h1 span{
+  color: rgb(255, 134, 14); /* Darker orange */
+  font-weight: bold;
+ }
+ .home-page h1:hover{
+  transform: translateY(-5px); /* Move the link slightly up */
+  color: orange;
+}
+.home-page::before{
+  content: "";
+  position: absolute;
+  bottom: 45%;
+  right: 0;
+  width: 50%;
+  height: 4px;
+  background-color: rgb(245, 107, 1); /* Dark overlay */
+}
+.home-page .options{
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  margin-top: 380px;
+  padding-left: 50px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  
+}
+
+.home-page .options p{
+  color: rgb(255, 254, 253);
+  font-size: 66px;
+  margin-top: 0;
+
+  margin-bottom: 60px;
+}
+
+.home-page .options p:hover{
+  color: orange;
+}
+.home-page button{
+  background-color: transparent;
+  padding: 12px 12px 12px 12px;
+  border: 2px solid rgb(78, 45, 13);
+  color: rgb(221, 115, 9);
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 0 5px #ff8c00, 0 0 15px #ff8c00, 0 0 30px #ff8c00;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.home-page button a{
+  color: inherit;
+  text-decoration: none;
+}
+.home-page button:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #fd8e07, 0 0 20px #fd900a, 0 0 40px #ff9616;
+}
+.home-page button:active{
+  transform: scale(0.9);
+  box-shadow: 0 0 2px #fd8e07, 0 0 4px #fd900a, 0 0 8px #ff9616;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+.button-div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Responsive design */
+@media (min-width: 100px) and (max-width: 250px) {
+  .home-page {
+    position: relative;
+  }
+   .home-page .img-div{
+    position: relative;
+    width: 100%;
+  }
+  .home-page img{
+    width: 100%;
+  }
+  .home-page h1{
+    position: absolute;
+    font-size: 20px;
+    top: 50px;
+    width: 100%;
+    left: 6%;
+    line-height: 50px;
+  }
+  .home-page .options{
+    background: transparent;
+    margin-left: -10px;
+    width: 100%;
+  }
+  .home-page .options p{
+    font-size: 20px;
+    
+  }
+  .home-page button{
+    font-size: 8px;
+  }
+  .second-part{
+    position: absolute;
+  }
+  .home-page::before{
+    display: none;
+  }
+}
+@media (min-width: 250.1px) and (max-width: 359.9px) {
+  .home-page {
+    position: relative;
+  }
+   .home-page .img-div{
+    position: relative;
+    width: 100%;
+  }
+  .home-page img{
+    width: 100%;
+  }
+  .home-page h1{
+    position: absolute;
+    font-size: 30px;
+    top: 50px;
+    width: 100%;
+    left: 6%;
+    line-height: 50px;
+  }
+  .home-page .options{
+    background: transparent;
+    margin-left: -10px;
+    width: 100%;
+  }
+  .home-page .options p{
+    font-size: 20px;
+    
+  }
+  .home-page button{
+    font-size: 10px;
+  }
+  .second-part{
+    position: absolute;
+  }
+  .home-page::before{
+    display: none;
+  }
+}
+@media (min-width: 360px) and (max-width: 445.9px) {
+  .home-page {
+    position: relative;
+  }
+   .home-page .img-div{
+    position: relative;
+    width: 100%;
+  }
+  .home-page img{
+    width: 100%;
+  }
+  .home-page h1{
+    position: absolute;
+    font-size: 40px;
+    top: 50px;
+    width: 100%;
+    left: 6%;
+    line-height: 50px;
+  }
+  .home-page .options{
+    background: transparent;
+  }
+  .home-page .options p{
+    font-size: 30px;
+    
+  }
+  .second-part{
+    position: absolute;
+  }
+  .home-page::before{
+    display: none;
+  }
+}
+@media (min-width: 446px) and (max-width: 530.9px) {
+  .home-page {
+    position: relative;
+  }
+   .home-page .img-div{
+    position: relative;
+    width: 100%;
+  }
+  .home-page h1{
+    position: absolute;
+    font-size: 46px;
+    top: 50px;
+    width: 100%;
+    left: 6%;
+    line-height: 50px;
+  }
+  .home-page .options{
+    background: transparent;
+  }
+  .home-page .options p{
+    font-size: 38px;
+  }
+  .second-part{
+    position: absolute;
+  }
+  .home-page::before{
+    display: none;
+  }
+}
+
+@media (min-width: 530px) and (max-width: 595.9px) {
+  .home-page {
+    position: relative;
+    
+  }
+   .home-page .img-div{
+    position: relative;
+    width: 100%;
+  }
+  .home-page h1{
+    position: absolute;
+    font-size: 50px;
+    top: 50px;
+    width: 100%;
+    left: 6%;
+    line-height: 50px;
+  }
+  .home-page .options{
+    background: transparent;
+  }
+  .home-page .options p{
+    font-size: 46px;
+  }
+  .second-part{
+    position: absolute;
+  }
+  .home-page::before{
+    display: none;
+  }
+}
+
+@media (min-width: 596px) and (max-width: 694px) {
+  .home-page {
+    position: relative; 
+  }
+   .home-page .img-div{
+    position: relative;
+    width: 100%; 
+  }
+  
+  .home-page h1{
+    position: absolute;
+    font-size: 50px;
+    top: 50px;
+    width: 100%;
+    left: 6%;
+    line-height: 50px;
+  }
+  .home-page .options{
+    background: transparent;
+  }
+  .home-page .options p{
+    font-size: 52px;
+  }
+  .second-part{
+    position: absolute;
+  }
+  .home-page::before{
+    display: none;
+  }
+}
+
+@media (min-width: 695px) and (max-width: 900px) {
+  .home-page {
+    position: relative;
+    
+  }
+   .home-page .img-div{
+    position: relative;
+    width: 100%;
+    
+  }
+  
+  .home-page h1{
+    position: absolute;
+    font-size: 50px;
+    top: 50px;
+    width: 90%;
+    left: 6%;
+    line-height: 50px;
+  }
+  .home-page .options{
+    background: transparent;
+  }
+  .home-page.options p{
+    font-size: 50px;
+  }
+  .second-part{
+    position: absolute;
+  }
+  .home-page::before{
+    display: none;
+  }
+}
+@media (min-width: 901px) and (max-width: 1300px) {
+  .home-page .options p{
+    font-size: 40px;
+  }
+  .home-page h1{
+    font-size: 40px;
+  }
+  
+}

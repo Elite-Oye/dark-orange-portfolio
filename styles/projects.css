@@ -1,0 +1,118 @@
+.projects-section{
+  height: 100%;
+  padding-top: 70px;
+  background-color: black;
+  position: relative;
+}
+ .projects-section h1{
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+ }
+.projects-container{
+ padding: 0px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 70px;
+  row-gap: 30px;
+}
+.projects{
+  background-color: rgb(0, 0, 0);
+  display: inline-block;
+  max-width: 350px;
+  
+  height: 350px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 5px #ff8c00, 0 0 10px #ff8c00, 0 0 20px #ff8c00;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.projects-container .img-div{
+  border: 1px solid #000000;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+  height: 180px;
+  width: 100%;
+}
+
+.projects img{
+  width: 100%;
+  height: 100%;
+}
+.title-description h3{
+  font-size: 22px;
+  color: #ff8000;
+  margin-bottom: 4px;
+}
+.title-description p{
+  color: white;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+.title-description a{
+  color: #fc7a00;
+  text-decoration: none;
+}
+.title-description{
+  width: 100%;
+  padding: 10px;
+}
+.view-more{
+  font-size: 16px;
+  color: #ff8000;
+  position: absolute;
+  bottom: 10px;
+  right: 10%;
+}
+
+.projects:hover{
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #ff8c00, 0 0 20px #ff8c00, 0 0 40px #ff8c00;
+}
+@media (min-width: 950px) and (max-width: 1090px) {
+  .projects-container{
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 100px 0px 100px;
+    column-gap: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 949.9px) {
+  .projects-container{
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 50px 0px 50px;
+    column-gap: 50px;
+  }
+}
+
+@media (min-width: 570px) and (max-width: 767.9px) {
+  .projects-container{
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 20px 0px 20px;
+    column-gap: 30px;
+    
+  }
+}
+
+@media(max-width: 569.9px) {
+  .projects-container{
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media(max-width: 274px) {
+  .projects-section h3{
+    font-size: 14px;
+  }
+  .projects-section p{
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,85 @@
+/* Contact Section */
+.contact-section {
+  padding-top: 70px;
+  background-color: #000000; /* Dark background */
+  color: #ffffff; /* White text */
+  text-align: center;
+  height: 100vh;
+}
+
+.contact-section h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  color: #FF9F1C; /* Accent color */
+}
+
+.contact-description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 80px;
+  color: #ffffff; /* Muted text color */
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap; /* Responsive layout */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.contact-item i {
+  font-size: 24px;
+  color: #FF9F1C; /* Icon accent color */
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #FF9F1C; /* Link accent color */
+  font-weight: bold;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+ 
+  .contact-section h2 {
+    font-size: 36px; /* Adjust heading size for smaller screens */
+  }
+
+  .contact-description {
+    font-size: 16px; /* Adjust description size */
+  }
+
+  .contact-item {
+    font-size: 16px; /* Adjust contact info size */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section h2 {
+    font-size: 32px; /* Further reduce heading size */
+  }
+
+  .contact-description {
+    font-size: 14px; /* Adjust description size */
+  }
+
+  .contact-item {
+    font-size: 14px; /* Adjust contact info size */
+  }
+
+  .contact-item i {
+    font-size: 20px; /* Adjust icon size */
+  }
+}

@@ -1,0 +1,106 @@
+.experience-section {
+  background-color: rgb(0, 0, 0);
+  
+  height: 100%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+  padding-top: 70px;
+}
+
+.experience-container {
+  padding: 0 20px;
+}
+
+.experience-section h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.pen-web-div {
+  display: flex;
+  flex-direction: row; /* Align items side by side */
+  justify-content: space-between; /* Space between the two divs */
+  align-items: flex-start; /* Align items to the top */
+}
+
+.pentester-div, .web-div {
+  width: 48%; /* Make each section take up about half of the container */
+  margin-bottom: 60px;
+}
+
+.pentester-div h3, .web-div h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.pentester-div h4, .web-div h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.pentester-div ul, .web-div ul {
+  color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.pentester-div li, .web-div li {
+  margin-bottom: 20px;
+  text-decoration: none;
+  list-style-type: none;
+  max-width: 600px;
+  font-size: 20px;
+}
+.resume-button{
+  background-color: transparent;
+  padding: 12px 12px 12px 12px;
+  border: 2px solid rgb(78, 45, 13);
+  color: rgb(221, 115, 9);
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 0 5px #ff8c00, 0 0 15px #ff8c00, 0 0 30px #ff8c00;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.resume-button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px #ff8c00, 0 0 20px #ff8c00, 0 0 40px #ff8c00;
+}
+.resume-button:active{
+  transform: scale(0.9);
+  transform: translateY(1px);
+  box-shadow: 0 0 5px #ff8c00, 0 0 10px #ff8c00, 0 0 20px #ff8c00;
+}
+@media(max-width: 800px){
+.pen-web-div {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.pentester-div li, .web-div li {
+  width: 100%;
+}
+.pentester-div ul, .web-div ul{
+  justify-content: center;
+  align-items: center;
+}
+.pentester-div, .web-div{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+}
+
+@media(max-width: 400px){
+.pen-web-div li{
+  font-size: 14px;
+}
+}
