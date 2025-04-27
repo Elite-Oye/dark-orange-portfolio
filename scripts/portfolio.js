@@ -1,3 +1,47 @@
+  // Loading Progress Bar
+  window.addEventListener('load', () => {
+    const loadingBar = document.getElementById('loading-bar');
+    const loadingPercentage = document.getElementById('loading-percentage');
+    let width = 0;
+
+    const interval = setInterval(() => {
+      if (width < 100) {
+        width++;
+        loadingBar.style.width = `${width}%`;
+        loadingPercentage.textContent = `${width}%`;
+      } else {
+        clearInterval(interval);
+        // Hide the loading screen after it's done
+        const loadingBarWrapper = document.getElementById('loading-bar-wrapper');
+        loadingBarWrapper.style.opacity = '0';
+        setTimeout(() => {
+          loadingBarWrapper.style.display = 'none';
+        }, 1000); // Fade out after 1 second
+      }
+    }, 20); // Increase the speed by decreasing the interval time
+  });
+
+  // Scroll Animations
+ // Select elements to animate
+const elements = document.querySelectorAll('.hidden');
+
+// Create the intersection observer
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    // If the element is in the viewport
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible'); // Add the 'visible' class for animation
+      observer.unobserve(entry.target); // Stop observing this element once it's animated
+    }
+  });
+}, { threshold: 0.1 }); // Trigger the animation when 10% of the element is in the viewport
+
+// Observe each element
+elements.forEach(el => {
+  observer.observe(el);
+});
+  // Debounce function to limit the rate at which
+
 const menu =  document.querySelector('.menu-button');
 const closeButton = document.querySelector('.close-sidebar');
 const h = document.querySelector('.sidebar');

@@ -19,6 +19,52 @@
     background-position: 0% 50%;
   }
 } */ 
+
+#loading-bar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+#loading-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;  /* Start at 0% */
+  height: 100%;  /* Occupy the full height of the page */
+  background-color: #d96c12;
+  transition: width 1s ease;  /* Smooth transition for width */
+}
+
+#loading-percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 35px;
+  color: #ffffff;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+}
+.hidden {
+  opacity: 0;
+  transform: translateX(-100px); /* Start from the left */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateX(0); /* End at normal position */
+}
+
  .home-page{
   display: flex;
   background-color: black;
