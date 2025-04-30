@@ -104,7 +104,7 @@ const projects = [
   },
   {
     title: 'Password strength checker',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Tool that analyzes a password and rates its security level based on length, complexity, and unpredictability, helping users create stronger, more secure passwords.',
     image: 'images/cyber-hoodie.webp'
   },
   {
